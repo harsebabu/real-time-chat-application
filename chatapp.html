@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATEL MESSENGER</title>
+    <link rel="stylesheet" href="chatpp.css"/>
+    <script src="chatapp.js"></script>
+  </head>
+  <body>
+
+<!---------- THE LOADER ----------->
+    <section id="theLoader">
+      <div id="loadBox">
+        <div id="loadForm">
+          <button id="logo">⚡</button>
+          <div id="inputBox">
+          <h3 style="color:#f53;">Temporary Account!</h3>
+          <input id="username" type="text" placeholder="Your name..."/><br />
+          <input id="submitAccount" type="submit" onclick="startMessanger();"/>
+          </div>
+        </div>
+        <div id="loadFooter">
+          <h2>RAHUL MESSENGER</h2>
+          <hr style="margin:6px auto;">
+          <h5 id="india">Loading...</h5>
+        </div>
+      </div>
+    </section>
+<script>
+// Loader Script___
+setTimeout(function() {
+    document.getElementById("inputBox").style.height = "28vh";
+    document.getElementById("loadForm").style.background = "#fff";
+    document.getElementById("india").innerHTML = "Made in India";
+    document.getElementById("logo").innerHTML = "";
+}, 3000);
+</script>
+    
+<!---------- THE HEADER ----------->
+    <header id="header">
+      <button id="myDp" onclick="showAlert('My Profile!', 'Please visit my profile!');"></button>
+      <div id="myName" onclick="showAlert('My Profile!', 'Please visit my profile!');">
+        <h2>RAHUL</h2>
+        <p>
+        <span id="offline">Last seen at <span id="seenLast"></span>.</span><span id="online" style="display:none;"></span>
+        </p>
+      </div>
+    </header>
+    
+<!--------- THE TIMING ----------->
+    <div id="timer" style="display:none;">
+      <span id="tTT">09:00</span> 
+      <span id="amPM">am/pm</span>
+    </div>
+    
+<!---------- THE MESSAGE BODY ------------>
+    <article id="main">
+    
+      <!-- (start) --->
+      <div id="topper" style="margin-top:100vh"></div>
+      
+      
+<!--=========/Block-01/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage" style="display:none;">
+        <button id="icon"></button>
+        <p class="RAHUL">Hii, <span id="user">Dear!</span><span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+      <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">Hello!</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+  
+      
+<!--=========/Block-02/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL">How are you?<span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+      <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">Theek hu😊</span> <span class="timing">9:15 p.m.</span></p>
+      </div>
+  
+     
+<!--=========/Block-03/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL">I'm not a professional coder. To code is my hobby.<span class="timing">9:13 p.m.</span></p><br />
+        <p class="RAHUL">what's going on<span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+      <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">Not more than 3 months</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+      
+      
+<!--=========/Block-04/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL">Nice!<span class="timing">9:13 p.m.</span></p><br />
+        <p class="RAHUL">What r u doing at the moment?<span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+        <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">nothing</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+      
+      
+<!--=========/Block-05/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL">Would you plz do me a favour?🙏<span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+        <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">Kya?</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+      
+     
+<!--=========/Block-06/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL"> <b>
+         apna girlfriend ke number de n 
+        </p>
+      </div>
+        
+        <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">Sure!</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+      
+      
+<!--=========/Block-07/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL">How many stars will you give to this messanger?<br />🌟🌟🌟🌟🌟<span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+        <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">🌟🌟🌟🌟🌟</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+
+
+<!--=========/Block-08/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL">Am I a good boy?<br /><span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+        <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">Not bad!</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+
+
+<!--=========/Block-09/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL">😊<span class="timing">9:13 p.m.</span></p>
+        <p class="RAHUL">Friendship??<span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+        <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">Never</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+  
+   
+<!--=========/Block-10/===========-->
+  
+      <!-- My Msg --->
+      <div class="myMessage">
+        <button id="icon"></button>
+        <p class="RAHUL">Okk dear! Thanks for giving me your time.<br /> Very nice to talk to you. Please <b>LIKE/UPVOTE</b> this code .<span class="timing">9:13 p.m.</span></p>
+        <p class="RAHUL">Happy Learning<br />Bye!🙏<span class="timing">9:13 p.m.</span></p>
+      </div>
+        
+      <!-- Your Msg --->
+      <div class="yourMessage">
+        <p class="friend"><span class="text">Bye!</span> <span class="timing">9:14 p.m.</span></p>
+      </div>
+      
+      <!---- (end) ------>
+      <div id="scroll" style="height:56px; line-height:56px; text-align:center; color:#ccc; font-size:12px; font-weight:bold;"></div>
+    </article>
+    
+<!---------- THE TYPING DOTS ----------->
+    <div id="typing">
+      <span id="dot1" class="typing">•</span>
+      <span id="dot2" class="typing">•</span>
+      <span id="dot3" class="typing">•</span>
+    </div>
+    
+<!---------- THE FOOTER ----------->
+    <footer id="footer">
+      <button id="camera" onclick="showAlert('Oops!', 'Your device does not support this feature! (Just kidding!)');"></button>
+      <input id="typeHere" type="text"/ placeholder="Type a short message here..." onfocus="scrollFunction();"/>
+      <input id="send" type="submit" value="&#10148;" onclick="sendMessage();" disabled/>
+    </footer>
+
+<!--------- ALERT ----------->
+    <section id="alertWindow">
+      <div id="alert-Box">
+        <h2 id="alert-Head" style="margin:2vw; color:#f53;">Alert!</h2>
+        <div id="alert-Msg"></div>
+        <br />
+        <button id="alert-Ok" onclick="alertHide();">OK</button>
+      </div>
+    </section>
+
+<!--------- THE SCRIPT ----------->
+<script>
+//Check input___
+setInterval(function() {
+  var text = document.getElementById("typeHere").value;
+  var send = document.getElementById("send");
+
+  if (text != "") {
+    send.disabled = false;
+    send.style.opacity = "1";
+  } else {
+    send.disabled = true;
+    send.style.opacity = ".5";
+  }
+}, 10);
+</script>
+  </body>
+</html>
