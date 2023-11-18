@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+}
+html {
+    scroll-behaviour:smooth;
+}
+body {
+    min-height:100vh;
+    background:-webkit-linear-gradient(#fcb, #f53);
+    font-family:'Roboto', sans-serif;
+}
+
+/*---- Loader ------*/
+#theLoader {
+    z-index:+2;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#f63;
+    background-image:url(http://cdn30.us1.fansshare.com/image/backgroundforpictures/wavy-orange-background-2083014302.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+#loadForm {
+    width:72vw;
+    max-height:60vh;
+    overflow:auto;
+    background:transparent;
+    border-radius:14px;
+    padding:18px 0 32px 0;
+    transition:background .5s;
+}
+#logo {
+    height:64px;
+    width:64px;
+    border:none;
+    outline:none;
+    border-radius:100%;
+    margin:16px auto;
+    background:#777;
+    background-image:url(https://api.sololearn.com/Uploads/Avatars/2750073.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    box-shadow:0px 0px 6px #ccc;
+    font-size:28px;
+}
+#inputBox {
+    height:0px;
+    overflow:hidden;
+    transition:height .5s;
+}
+#username {
+    border:none;
+    outline:none;
+    border-bottom:1px solid #ccc;
+    margin-top:32px;
+}
+#submitAccount {
+    margin-top:32px;
+    border:none;
+    background:-webkit-linear-gradient(#f75, #f53);
+    padding:8px 24px;
+    font-weight:bold;
+    color:#fff;
+}
+#submitAccount:hover {
+    background:-webkit-linear-gradient(#f53, #f75);
+}
+#loadFooter {
+    margin-top:36px;
+    font-family:courier;
+    color:#fff;
+}
+
+/*---- Header ------*/
+#header {
+    z-index:+1;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:60px;
+    padding:0px 3vw;
+    background:-webkit-linear-gradient(#f75, #f53);
+    box-shadow:0px 0px 6px grey;
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+#myName {
+    margin-left:6px;
+    border-left:1px solid #fff;
+    padding-left:6px;
+}
+#myDp {
+    height:44px;
+    width:44px;
+    border:none;
+    background:#fff;
+    border-radius:100%;
+    background-image:url(https://api.sololearn.com/Uploads/Avatars/2750073.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    box-shadow:0px 0px 3px #eee;
+}
+#header p {
+    font-size:11px;
+    margin-top:1px;
+    padding-left:3px;
+}
+#online {
+    animation:blink 5s infinite;
+}
+@keyframes blink {
+    0% {opacity:0;}
+   20% {opacity:1;}
+  100% {opacity:1;}
+}
+
+/*-------- Main --------*/
+
+#main {
+    position:fixed;
+    top:0;
+    bottom:56px;
+    left:0;
+    right:0;
+    background-image:url('https://cdn.wallpapersafari.com/27/32/jt4AoG.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    padding:14px 3vw;
+    overflow:scroll;
+}
+div.myMessage {
+    display:none;
+    position:relative;
+    text-align:left;
+    margin:1vh 30vw 3vh 0px;
+}
+div.yourMessage {
+    display:none;
+    position:relative;
+    text-align:right;
+    margin:1vh 0vw 3vh 30vw;
+}
+#icon {
+    height:32px;
+    width:32px;
+    position:absolute;
+    bottom:5px;
+    border:none;
+    border-radius:100%;
+    box-shadow:0px 1px 3px #ccc;
+    background:#07f;
+    background-image:url(https://api.sololearn.com/Uploads/Avatars/2750073.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.RAHUL {
+    display:inline-block;
+    position:relative;
+    background:#fff;
+    padding:4px 6px;
+    border-radius:6px 6px 6px 0px;
+    box-shadow:0px 1px 3px #ccc;
+    margin-bottom:5px;
+    margin-left:36px;
+}
+.friend {
+    display:inline-block;
+    position:relative;
+    background:#fcb;
+    padding:4px 6px;
+    border-radius:6px 6px 0px 6px;
+    box-shadow:0px 1px 3px #ccc;
+    margin-bottom:5px;
+    text-align:left;
+}
+#main a:link {
+    color:#07f;
+}
+.timing {
+    display:block;
+    float:right;
+    margin-top:5px;
+    margin-left:10px;
+    font-size:11px;
+    text-align:right;
+    color:#f53;
+}
+#noMore {
+    text-align:center;
+    font-size:12px;
+    font-weight:bold;
+    color:#ccc;
+}
+
+/*---- THE FOOTER ------*/
+#footer {
+    z-index:+1;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:56px;
+    background:#fcb;
+    box-shadow:0px 0px 6px grey;
+}
+#camera {
+    position:absolute;
+    left:14px;
+    top:10px;
+    bottom:14px;
+    width:40px;
+    background:none;
+    border:none;
+    outline:none;
+    border-radius:6px;
+    background-image:url(https://sites.google.com/site/apnaiaszone/sololearn/Camera.png);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+#typeHere {
+    position:absolute;
+    top:10px;
+    bottom:10px;
+    left:64px;
+    width:60vw;
+    min-height:36px;
+    padding:2px 6px;
+    border-radius:18px;
+    border:1px solid #fcb;
+    outline:none;
+}
+#send {
+    position:absolute;
+    right:5vw;
+    top:0;
+    bottom:0;
+    background:none;
+    border:none;
+    outline:none;
+    font-size:36px;
+    text-shadow:none;
+    color:#f53;
+}
+#send:hover {
+    animation:send 1s;
+}
+@keyframes send {
+    0% {transform:translateX(0vw);}
+   10% {transform:translateX(-3vw);}
+  100% {transform:translateX(30vw);}
+}
+
+/*------ HIDDEN ITEMS ------*/
+
+#typing {
+    z-index:+1;
+    position:fixed;
+    bottom:64px;
+    left:36px;
+    height:32px;
+    width:18vw;
+    box-shadow:0px 1px 3px #ccc;
+    font-size:28px;
+    background:#fff;
+    border-radius:5vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    visibility:hidden;
+}
+#typing .typing {
+    margin-top:3px;
+    color:#f53;
+}
+#dot1 {
+    animation:dot1 1s infinite;
+    animation-delay:.1s;
+}
+#dot2 {
+    animation:dot2 1s infinite;
+    animation-delay:.3s;
+}
+#dot3 {
+    animation:dot3 1s infinite;
+    animation-delay:.4s;
+}
+@keyframes dot1 {
+    0% {margin-top:3px;}
+   30% {margin-top:-3px;}
+   60% {margin-top:3px;}
+  100% {margin-top:3px;}
+}
+@keyframes dot2 {
+    0% {margin-top:3px;}
+   30% {margin-top:-3px;}
+   60% {margin-top:3px;}
+  100% {margin-top:3px;}
+}
+@keyframes dot3 {
+    0% {margin-top:3px;}
+   30% {margin-top:-3px;}
+   60% {margin-top:3px;}
+  100% {margin-top:3px;}
+}
+
+/*----- ALERT -----*/
+#alertWindow {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,0,0,.6);
+    z-index:+3;
+}
+#alert-Box {
+    background:#fff;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    box-shadow:0px 1px 6px -1px #000;
+    width:72vw;
+    box-sizing:border-box;
+    border-radius:3px;
+    padding:5vw;
+    text-align:center;
+    animation-name:showAlert;
+    animation-duration:.5s;  
+    animation-fill-mode:forwards;
+}
+#alert-Ok {
+    border:none;
+    background:-webkit-linear-gradient(#f75, #f53);
+    padding:5px 10px;
+    font-weight:bold;
+    color:#fff;
+}
+@keyframes showAlert {
+    0% {transform:scale(0)}
+  100% {transform:scale(1)}
+}
